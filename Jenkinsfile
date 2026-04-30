@@ -23,17 +23,4 @@ pipeline {
             }
         }
     }
-
-
-    post {
-        always {
-            sh 'az logout || true'
-        }
-        success {
-            echo "Deployed ${IMAGE_NAME}:${IMAGE_TAG} to Azure App Service successfully!"
-        }
-        failure {
-            echo "Deployment failed. Check the logs for details."
-        }
-    }
 }
