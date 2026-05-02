@@ -2,9 +2,10 @@ services:
   app:
     build: . # <-- tells Compose to build an image using the Dockerfile in the current directory
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     environment:
       - databaseurl=mysql+pymysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:3306/${MYSQL_DB}
+      - SECRET_KEY=${SECRET_KEY} # Create this variable in Jenkins credentials and reference it here for better security.
     depends_on:
       mysql:
         condition: service_healthy

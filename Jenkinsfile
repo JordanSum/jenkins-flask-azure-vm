@@ -6,6 +6,7 @@ pipeline {
         MYSQL_PASSWORD = credentials('MYSQL_PASSWORD')
         MYSQL_DB       = credentials('MYSQL_DB')
         MYSQL_ROOT_PASSWORD = credentials('MYSQL_ROOT_PASSWORD')
+        SECRET_KEY = credentials('SECRET_KEY')
         IMAGE_TAG = "${env.BUILD_NUMBER}"
     }
 

@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 # SQLAlchemy configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 db = SQLAlchemy(app)
 print("Database connected")
 
