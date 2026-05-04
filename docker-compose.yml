@@ -18,7 +18,7 @@ services:
       MYSQL_USER: ${MYSQL_USER} # Create this variable in Jenkins credentials and reference it here for better security.
       MYSQL_PASSWORD: ${MYSQL_PASSWORD} # Create this variable in Jenkins credentials and reference it here for better security.
     ports:
-      - "3306:3306"
+      - "127.0.0.1:3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     healthcheck:
