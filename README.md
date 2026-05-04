@@ -1,4 +1,4 @@
-# Python Flask App Using Jenkins CI/CD Pipeline
+# Python Flask App Using Jenkins CI/CD Pipeline in Azure VM
 
 Welcome to my repository to deploy a Python Flask application using Jenkins pipelines to a Virtual Machine (VM) in Azure.  Here you will find everything needed in order to deploy this web application to Azure cloud using IaC.  This project deploys a Flask web application + MySQL database for tracking a "To Do" list, (I know, very basic).  Some key services this project uses in Azure are VNET, Azure VM, MySQL, and Jenkins. Please remember to study, apply, and learn but most importantly, have fun!
 
